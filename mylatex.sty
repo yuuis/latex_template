@@ -1,7 +1,7 @@
 % My LaTeX Style
 
 %-------------------------------------------------
-% 他のスタイルのインクルード
+% include other styles
 %-------------------------------------------------
 \usepackage{float}
 \usepackage{url}
@@ -10,7 +10,7 @@
 \usepackage{color}
 
 %-------------------------------------------------
-% 表，図，式，プログラムの参照
+% Reference table, figure, expression, program
 %-------------------------------------------------
 \def\figref{\@ifstar{\@Figref@}{\@figref@}}
 \def\@figref@#1{\@ifundefined{fig#1fig}{\textbf{図 \ref{#1}}}{図 \ref{#1}}%
@@ -33,7 +33,7 @@
 \def\@Pgref@#1{リスト \ref{#1}}
 
 %-------------------------------------------------
-% listingsの設定
+% setting for listings
 %-------------------------------------------------
 \lstset{
   frame=single,
